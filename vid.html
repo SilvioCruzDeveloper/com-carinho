@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ff4081; /* Cor de fundo rosa */
+        }
+
+        .video-container {
+            border: 4px solid #ff4081; /* Cor da borda rosa */
+            border-radius: 8px; /* Arredondamento das bordas */
+            max-width: 80%;
+            width: 100%;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .button-container {
+            margin-top: 20px; /* Espaçamento superior */
+        }
+
+        .button-container a {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .button-container img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+    <title>Vídeo</title>
+</head>
+<body>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/eAUgOTRXV2U?autoplay=0&controls=1" allowfullscreen></iframe>
+    </div>
+
+    <div class="button-container">
+        <a href="index.html"><img src="media/beack.png" alt=""></a>
+    </div>
+</body>
+</html>

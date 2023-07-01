@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilize o player de vídeo como desejado */
+    .video-player {
+      width: 640px;
+      height: 360px;
+      position: relative;
+    }
+    
+    /* Esconda o título do canal */
+    .video-player .youtube-title {
+      display: none;
+    }
+    
+    /* Estilize o botão de play */
+    .video-player .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      color: #fff;
+      font-size: 36px;
+      line-height: 80px;
+      text-align: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-player">
+    <!-- Substitua "YOUTUBE_VIDEO_ID" pelo ID do vídeo do YouTube -->
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <div class="youtube-title">Nome do Canal</div>
+    <div class="play-button">&#9658;</div>
+  </div>
+</body>
+</html>

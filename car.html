@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff4081; /* Cor do título rosa */
+            text-align: center;
+            margin-bottom: 20px;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .heart {
+            width: 20px;
+            height: 20px;
+            background-color: #ff4081; /* Cor do coração rosa */
+            position: relative;
+            transform: rotate(-45deg);
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0% { transform: rotate(-45deg) scale(1); }
+            50% { transform: rotate(-45deg) scale(1.3); }
+            100% { transform: rotate(-45deg) scale(1); }
+        }
+
+        .heart:before, .heart:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: #ff4081; /* Cor do coração rosa */
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart:after {
+            top: 0;
+            left: 10px;
+        }
+    </style>
+    <title>Meu amor</title>
+</head>
+<body>
+    <h1>Ei Pretinha</h1>
+    <p>Quero começar dizendo o quanto você significa para mim e o quanto eu valorizo nosso relacionamento. Sei que você tem se sentido um pouco negligenciada quando estou no computador estudando programação, e entendo como isso pode parecer que estou dando mais atenção ao computador do que a você. Mas quero explicar por que isso é tão importante para mim.</p>
+
+    <p>Eu estudo programação porque acredito que isso pode abrir portas para um futuro melhor para nós dois. Quero construir uma vida estável e próspera para nós, onde possamos ser felizes e realizados. A programação é uma área com muitas oportunidades de trabalho, e quero desenvolver habilidades que possam nos proporcionar uma vida confortável.</p>
+
+    <p>No entanto, entendo que é essencial encontrar um equilíbrio entre meu tempo de estudo e nosso tempo juntos. Quero que você saiba que vou me esforçar para estar mais presente e dedicar momentos de qualidade a você. Nosso relacionamento é prioridade em minha vida, e quero encontrar maneiras de conciliar meus estudos com nossa felicidade.</p>
+
+    <p>Para mostrar o quanto você é especial para mim, criei um site onde expresso meus sentimentos por você. Lá, coloquei um poema e um vídeo fofo para demonstrar meu amor. Espero que isso mostre o quanto você é importante em minha vida.</p>
+
+    <p>Ny, você é meu porto seguro, e quero construir um futuro brilhante ao seu lado. Prometo trabalhar em conjunto para encontrar um equilíbrio saudável e fortalecer nosso relacionamento. <span class="heart"></span></p>
+    <a href="index.html"><img src="media/beack.png" alt=""></a>
+</body>
+</html>
