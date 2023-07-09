@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Aba Adorável</title>
+  <link rel="stylesheet" type="text/css" href="ev.css">
+</head>
+<body>
+  <div class="container">
+    <h1>oiiiiiiiiiiiii</h1>
+
+    <div class="photo-gallery">
+      <h2>Amo essa foto!</h2>
+      <div class="photo-grid">
+        <div class="photo">
+          <img src="media/euny.jpg" alt="Descrição da foto 1">
+        
+     <!-- Adicione mais fotos seguindo a mesma estrutura -->
+      </div>
+    </div>
+
+    <div class="love-story">
+      <h2>oi minha frisk frisk</h2>
+      <p>Mozinho, eu queria te falar um pouco do que eu lembro que vivemos até hoje. Ainda lembro mais ou menos do sonho que tive com você naquela noite. Lembro da primeira mensagem que mandei para você no Facebook. Lembro de quando te vi pela primeira vez e você estava rouco e com vergonha. Lembro do seu cheiro, e isso me deixa com o coração aquecido. Eu te amo muito, amo, amo, amo. Lembro do dia em que te pedi em namoro, porque tinha certeza de que você era o amor da minha vida. Como eu te amo, amo, amo! Sei lá, te amo muito mesmo, aaaaaaaaahhhhhhh!
+        eu sei q sou boinho em fazer um site , mais esse e meu jeito nerde de me decrarar pra você!
+      que a gente fique junto pra sempre feliz 1,1 aaaaaaaaaaaahhhhhhhh Te amo!
+    </p>
+      <!-- Adicione o texto ou linha do tempo interativa com fotos e descrições da história de amor -->
+    </div>
+
+    <div class="message-form">
+        <h2>Envie uma mensagem</h2>
+        <p>Deixe uma mensagem do que você achou</p>
+        <form>
+          <textarea id="message-text" placeholder="Digite sua mensagem..." rows="5"></textarea>
+          <button type="button" onclick="sendWhatsAppMessage()">Enviar mensagem</button>
+        </form>
+      </div>
+      <div class="button-container">
+        <a href="index.html"><img src="media/beack.png" alt=""></a>
+    </div>
+ 
+ <script>
+      function sendWhatsAppMessage() {
+        var message = document.getElementById("message-text").value;
+        var phoneNumber = "5591984488375";
+        var encodedMessage = encodeURIComponent(message);
+        var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+        
+        window.open(whatsappURL);
+      }
+      
+   
+
+      
+      
+</body>
+</html>
