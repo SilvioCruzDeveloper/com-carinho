@@ -28,26 +28,6 @@
       <!-- Adicione o texto ou linha do tempo interativa com fotos e descrições da história de amor -->
     </div>
 
-    <div class="message-form">
-        <h2>Envie uma mensagem</h2>
-        <p>Deixe uma mensagem do que você achou</p>
-        <form>
-          <textarea id="message-text" placeholder="Digite sua mensagem..." rows="5"></textarea>
-          <button type="button" onclick="sendWhatsAppMessage()">Enviar mensagem</button>
-        </form>
-      </div>
-      <div class="button-container">
-        <a href="index.html"><img src="media/beack.png" alt=""></a>
-    </div>
- 
- <script>
-      function sendWhatsAppMessage() {
-        var message = document.getElementById("message-text").value;
-        var phoneNumber = "5591984488375";
-        var encodedMessage = encodeURIComponent(message);
-        var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
-        
-        window.open(whatsappURL);
       }
       
    
